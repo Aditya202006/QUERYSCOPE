@@ -28,8 +28,8 @@ app.use("/api/ai/mentor", mentorRoutes);
 
 app.use("/api/review", reviewRoutes);
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+    console.log(`🚀 QueryScope API running on port ${PORT}`);
 });
